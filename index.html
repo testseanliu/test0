@@ -7,13 +7,31 @@
   <title>JS Bin</title>
 </head>
 <body>
- <p>Test Parallel Tracking</p>
- <a href="https://www.google.com/">Click URL</a>
+ <p>Testing sendBeacon redirect chain...</p>
+ <pre>https://bit.ly/1YxKRV6
+   302 -> http://httpbin.org/redirect-to?url=http://requestb.in/1gc1skh1
+   302 -> http://requestb.in/1gc1skh1</pre>
+ 
   <script>
-    window.addEventListener('beforeunload', function(event) { for(var i=0; i < 1; ++i) navigator.sendBeacon('https://tracker.marinsm.com/rd?cid=262854n559168&ae=1&ohost=www.google.com&cid=CAESEeD2aRi_A4A48QXkArv45YF2&sig=AOD64_1ST608FhD0F6Orc6HXyeCuhO6t_Q&q=&ved=0ahUKEwjllKqqnp_bAhXKxFQKHU2wBcsQ0QwIPw&adurl=https://www.teleflora.com/%3Fsrccode%3DPS_GG_e_Flwrs%26promotion%3DPSGFD10D%26ky%3Dflowers%26GCID%3D411%26kw%3Dflowers%26Matchtype%3De%26gclid%3DCjwKCAjwxZnYBRAVEiwANMTRX565vyteC_2Z3NJ8c8-_AtJa0l_TBoEfe5NU0sd8ul1jFCl3GmDSnRoCs2cQAvD_BwE&beforeunload=true'); });
-  </script>
-  <script>
-    window.addEventListener('unload', function(event) { for(var i=0; i < 1; ++i) navigator.sendBeacon('https://tracker.marinsm.com/rd?cid=262854n559168&ae=1&ohost=www.google.com&cid=CAESEeD2aRi_A4A48QXkArv45YF2&sig=AOD64_1ST608FhD0F6Orc6HXyeCuhO6t_Q&q=&ved=0ahUKEwjllKqqnp_bAhXKxFQKHU2wBcsQ0QwIPw&adurl=https://www.teleflora.com/%3Fsrccode%3DPS_GG_e_Flwrs%26promotion%3DPSGFD10D%26ky%3Dflowers%26GCID%3D411%26kw%3Dflowers%26Matchtype%3De%26gclid%3DCjwKCAjwxZnYBRAVEiwANMTRX565vyteC_2Z3NJ8c8-_AtJa0l_TBoEfe5NU0sd8ul1jFCl3GmDSnRoCs2cQAvD_BwE&unload=true'); });
+    navigator.sendBeacon("https://www.googleadservices.com/pagead/aclk?sa=L
+&ai=DChcSEwijxZrNs8fcAhUJw2QKHQtlDNoYABAAGgJwag
+&ae=1
+&num=1
+&ohost=www.google.com
+&cid=CAASE-Rox_u3V0excCUoC6TTIrRWV5s
+&sig=AOD64_1Uva1NoJcAUxgQuWLvYfmMwk79wg
+&adurl=https://www.bouqs.com/flowers/all%3Fbcid%3D9502%26utm_medium%3Dpaid_search%26utm_source%3Dgoogle%26utm_campaign%3Dgeneral%26bouqin%3Dgglsem%26traffic_source%3Dgoogle_general
+&q=&res_url=https%3A%2F%2Fcsa-devel.appspot.com%2Fdemos%2Fcsa
+&rurl=https%3A%2F%2Fcsa-devel.appspot.com%2Fapp
+&nb=0
+&nm=312
+&is=866x602
+&nx=255
+&ny=11
+&clkt=33
+&bg=!b2ylbHREKQJicabXolACAAAAalIAAAAhmQFc4M_ZT9XCFTsvls-ayUs4yNA-NH-BWQpIfkq3dnj0d3E1d5Ne_LfgDWho6dip_iUOlgezS-dDR5ECGFFyp7tGOHMwqaWb7TnlyksYqvBSV1-obDTSeL4rBeD_dRLplUbP4O6_dDQ_hqpZrPeF6FEuSvRwneSSK5u5jO5NDVToFbX-gY-qi3WGDo5LGH_Bcgeg_0kGd6-AmPZ1Nv5fUVK1WrezZyWtO41biZcegkXAQFk7dZwdeqdrkvCCP2Kf36ju407dxTJaSWAsDWGx8pTvxjoF2LSAaqoSD0hl1IweGUJM3Bq7IRBmyjEwuIEl0jgupNDZFR6ndMkLdbnFbDb0950v60XQdvrNC9CFZNLOcMEu9OEKXXwh9_TZ8bkSf-WLBTKKHhapeOmjmsWN8294Mr84sWVl7ClSAdgQ3BWhAbb4gA4s85cOhnxta6VPcOSkTzoDBSqagcZJIIR4
+&act=1
+&ri=1")
   </script>
 </body>
 </html>
