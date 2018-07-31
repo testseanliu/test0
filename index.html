@@ -7,13 +7,10 @@
   <title>JS Bin</title>
 </head>
 <body>
- <p>Testing sendBeacon redirect chain...</p>
- <pre>https://bit.ly/1YxKRV6
-   302 -> http://httpbin.org/redirect-to?url=http://requestb.in/1gc1skh1
-   302 -> http://requestb.in/1gc1skh1</pre>
- 
+ <p>Test Parallel Tracking</p>
+ <a href="https://www.google.com/">Click URL</a>
   <script>
-    navigator.sendBeacon("https://bouqs.com/flowers/all?bcid=9502&utm_medium=paid_search&utm_source=google&utm_campaign=general&bouqin=gglsem&traffic_source=google_general")
+    window.addEventListener('beforeunload', function(event) { navigator.sendBeacon('https://bouqs.com/flowers/all?bcid=9502&utm_medium=paid_search&utm_source=google&utm_campaign=general&bouqin=gglsem&traffic_source=google_general'); });
   </script>
 </body>
 </html>
